@@ -19,4 +19,4 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-// complted till 15min
+// complted till 45.30min
