@@ -4,11 +4,14 @@ import Header from "./components/header/Header";
 import { Routes, Route, Link } from "react-router-dom";
 import Pages from "./pages/Pages";
 import Data from "./components/Data";
+import Sdata from "./components/shop/Sdata"
 import { useState } from "react";
 import Cart from "./components/Cart/cart";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const { productItems } = Data;
+  const { shopItems } = Sdata
   const [cartItem, setCartItem] = useState([]);
 
   const addToCart = (product) => {
@@ -44,13 +47,14 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Pages  productItems={productItems} addToCart={addToCart} />}
+          element={<Pages  productItems={productItems} addToCart={addToCart} shopItems={shopItems} />}
         />
           <Route
           path="/cart"
           element={<Cart cartItem={cartItem} addToCart={addToCart} decreaseQty={decreaseQty} />}
         />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,121 +8,100 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
 }
-
 .background {
-  background-color: #f6f9ff;
+  background: #f6f9fc;
   padding: 50px 0;
 }
-
 .container {
   max-width: 90%;
   margin: auto;
 }
-
 .d_flex {
   display: flex;
   justify-content: space-between;
 }
-
 .c_flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .f_flex {
   display: flex;
 }
-
-a{
-    text-decoration: none;
-    color: #000;
+a {
+  text-decoration: none;
+  color: black;
 }
-
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-
-.uppercase{
-    text-transform: uppercase;
+.uppercase {
+  text-transform: uppercase;
 }
-
-.capitalize{
-    text-transform: capitalize;
+.capitalize {
+  text-transform: capitalize;
 }
-
-.RText{
-text-align: right;
+.RText {
+  text-align-last: right;
 }
-
-input, button{
+input,
+button {
   border: none;
   outline: none;
-  background: none;
+  background-color: none;
 }
-
-.row{
+.row {
   width: 50%;
 }
-
-.icon-circle{
+.icon-circle {
   width: 50px;
   height: 50px;
-  line-height: 45px;
-  background-color: #f3f5f9;
+  line-height: 50px;
+  background: #f3f5f9;
   margin-left: 20px;
   text-align: center;
   border-radius: 50%;
 }
-
-.boxShadow{
-  box-shadow: rgb(43 52 69 / 10%) 0 4px 16px !important;
+.boxShadow {
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
 }
 
-
-
-/*------------Category-------------*/
-
+/*---------category----------*/
 .contentWidth {
   width: 77%;
 }
-
-.category{
-  width: 23%;
-  box-shadow: rgb(43, 52, 69 / 10%) 0 4px 16px !important;
-  height: 450px;
+.category {
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
   background-color: #fff;
+  width: 23%;
+  height: 510px;
   padding: 15px 0;
   border-radius: 5px;
   margin-top: 5px;
 }
-
-.category img{
+.category img {
   width: 30px;
   height: 30px;
   margin-top: 10px;
   object-fit: contain;
 }
-
-.category span{
+.category span {
   margin: 10px 20px;
   text-transform: capitalize;
-
 }
-
-.category .box{
+.category .box {
   transition: 0.5s;
   padding: 0 20px;
 }
-
-.category .box:hover{
-  background-color: #ffe1ef;
+.category .box:hover {
+  background-color: #ffe1e6;
   cursor: pointer;
 }
-/*------------Category-------------*/
 
+/*---------category----------*/
 .btn-primary {
   background: #e94560;
   padding: 13px 40px;
@@ -152,23 +130,19 @@ input, button{
   color: #fff;
   margin: 10px;
 }
-
-/*------------------products--------------------*/
-
-.product{
+/*---------product-----------*/
+.product {
   background: #fff;
   padding: 20px;
   position: relative;
   border-radius: 8px;
-  box-shadow: rgb(43 52 69 / 10%) 0px 1px 3px;
+  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
   margin: 10px;
 }
-
-.product h3{
-  font-size: 17px;
+.product h3 {
   font-weight: 400;
+  font-size: 17px;
 }
-
 .product .rate i {
   font-size: 15px;
   color: #ffcd4e;
@@ -249,7 +223,6 @@ input, button{
   cursor: pointer;
 }
 /*----- control btn -------*/
-
 /*----- heading -------*/
 .heading .heading-left i {
   font-size: 30px;
