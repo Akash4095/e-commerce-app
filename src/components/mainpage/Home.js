@@ -1,6 +1,6 @@
 import React from 'react'
 import Categories from './Categories'
-import SlideCard from './SliderCard'
+import SlideHome from './Slider'
 import "./Home.css"
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
       <section className='home'>
         <div className='container d_flex'>
           <Categories />
-          <SlideCard />
+          <SlideHome />
         </div>
       </section>
     </>

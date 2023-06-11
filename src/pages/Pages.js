@@ -1,12 +1,14 @@
-import React from 'react'
-import Home from '../components/mainpage/Home'
+import React from "react";
+import Home from "../components/mainpage/Home";
+import FlashDeals from "../components/flashDeals/flashDeals";
 
-const Pages = () => {
-    return (
-        <>
-            <Home />
-        </>
-    )
-}
+const Pages = ({productItems, addToCart}) => {
+  return (
+    <>
+      <Home />
+      <FlashDeals productItems={productItems} addToCart={addToCart} />
+    </>
+  );
+};
 
-export default Pages
+export default Pages;
