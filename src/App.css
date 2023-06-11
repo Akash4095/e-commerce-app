@@ -82,6 +82,8 @@ input, button{
   box-shadow: rgb(43 52 69 / 10%) 0 4px 16px !important;
 }
 
+
+
 /*------------Category-------------*/
 
 .contentWidth {
@@ -247,3 +249,28 @@ input, button{
   cursor: pointer;
 }
 /*----- control btn -------*/
+
+/*----- heading -------*/
+.heading .heading-left i {
+  font-size: 30px;
+}
+.heading .heading-left h2 {
+  font-size: 25px;
+  margin: 5px;
+}
+.heading .heading-right i,
+.heading .heading-right {
+  text-align: right;
+  color: grey;
+}
+/*----- heading -------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
