@@ -3,7 +3,7 @@ import Categories from './Categories'
 import SlideHome from './Slider'
 import "./Home.css"
 
-const Home = () => {
+const Home = ({}) => {
   return (
     <>
       <section className='home'>
