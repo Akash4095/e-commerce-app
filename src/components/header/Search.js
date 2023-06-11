@@ -2,10 +2,10 @@ import React from 'react'
 import logo from "../assets/images/logo2.png"
 import { Link } from 'react-router-dom'
 
-const Search = ({cartItem}) => {
+const Search = ({ cartItem }) => {
 
-  window.addEventListener('scroll',function(){
-    const search= this.document.querySelector(".search")
+  window.addEventListener('scroll', function () {
+    const search = this.document.querySelector(".search")
     search.classList.toggle("active", window.scrollY > 100)
   })
   return (
@@ -13,7 +13,9 @@ const Search = ({cartItem}) => {
       <section className='search'>
         <div className='container c_flex'>
           <div className='logo width'>
-            <img src={logo} alt='logo' width="120" height="35" />
+            <Link to="/">
+              <img src={logo} alt='logo' width="120" height="35" />
+            </Link>
           </div>
           <div className='search-box f_flex'>
             <i className='fa fa-search'></i>
@@ -25,7 +27,7 @@ const Search = ({cartItem}) => {
             <div className='cart'>
               <Link to="/cart">
                 <i className='fa fa-shopping-cart icon-circle'></i>
-                <span>{cartItem.legth === 0 ? "": cartItem.length}</span>
+                <span>{cartItem.legth === 0 ? "" : cartItem.length}</span>
               </Link>
             </div>
           </div>
